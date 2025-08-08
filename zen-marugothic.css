@@ -1,0 +1,28 @@
+@font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Light.woff2) format('woff2');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Medium.woff2) format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Black.woff2) format('woff2');
+    font-weight: 900;
+}

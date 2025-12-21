@@ -13,7 +13,7 @@ $skew: -3deg;
 
 $imagewidth: clamp(50vw, 600px, 85vw);
 $bodywidth: 80%;
-$box-margin: 1rem;
+$box-margin: 0.5rem;
 
 @use "zen-marugothic.css";
 
@@ -110,7 +110,6 @@ div.box {
 
 div.player {
     margin: $box-margin 0;
-    padding: 1rem;
     position:relative;
     width: $boxwidth;
     color: $white;

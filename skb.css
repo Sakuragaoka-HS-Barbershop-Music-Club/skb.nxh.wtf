@@ -98,7 +98,7 @@ emph::before {
 }
 
 div.box {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding: 1rem;
   position: relative;
   width: clamp(60%, 600px, 85%);
@@ -109,8 +109,7 @@ div.box {
 }
 
 div.player {
-  margin: 1rem 0;
-  padding: 1rem;
+  margin: 0.5rem 0;
   position: relative;
   width: clamp(60%, 600px, 85%);
   color: #fff;
@@ -120,15 +119,15 @@ div.player {
 div.right {
   margin-right: 0;
   margin-left: calc(100% - clamp(60%, 600px, 85%));
-  margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0524077793 + 1rem);
-  margin-bottom: calc(1rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793);
+  margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0524077793 + 0.5rem);
+  margin-bottom: calc(0.5rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793);
 }
 
 div.center {
   margin-right: auto;
   margin-left: calc((100% - clamp(60%, 600px, 85%)) * 0.5);
   margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0524077793 * 0.5 + 1rem);
-  margin-bottom: calc(1rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793 * 0.5);
+  margin-bottom: calc(0.5rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793 * 0.5);
 }
 
 p,

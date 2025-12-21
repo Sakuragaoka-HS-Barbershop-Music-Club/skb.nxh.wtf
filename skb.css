@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  width: 87.5%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: calc(clamp(50vw, 600px, 85vw) * 0.4);
@@ -47,7 +47,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -97,9 +97,10 @@ emph::before {
   transform: skewX(-5deg);
 }
 
-article {
+div.box {
   margin: 1rem 0;
   padding: 1rem;
+  position: relative;
   width: clamp(60%, 600px, 85%);
   background-color: #55101e;
   mix-blend-mode: hard-light;
@@ -107,11 +108,27 @@ article {
   transform: skewY(-3deg);
 }
 
-article.right {
+div.player {
+  margin: 1rem 0;
+  padding: 1rem;
+  position: relative;
+  width: clamp(60%, 600px, 85%);
+  color: #fff;
+  transform: skewY(-3deg);
+}
+
+div.right {
   margin-right: 0;
-  margin-left: auto;
-  margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0523359562 + 1rem);
-  margin-bottom: calc(1rem - (100% - clamp(60%, 600px, 85%)) * -0.0523359562);
+  margin-left: calc(100% - clamp(60%, 600px, 85%));
+  margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0524077793 + 1rem);
+  margin-bottom: calc(1rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793);
+}
+
+div.center {
+  margin-right: auto;
+  margin-left: calc((100% - clamp(60%, 600px, 85%)) * 0.5);
+  margin-top: calc((100% - clamp(60%, 600px, 85%)) * -0.0524077793 * 0.5 + 1rem);
+  margin-bottom: calc(1rem - (100% - clamp(60%, 600px, 85%)) * -0.0524077793 * 0.5);
 }
 
 p,
@@ -119,10 +136,26 @@ dl,
 ol,
 ul,
 nav {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 a {
-  color: inherit;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+a::before {
+  /* Highlight color */
+  background-color: #ff3159;
+  background-blend-mode: hard-light;
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.3em);
+  height: 60%;
+  left: -0.15em;
+  bottom: 0.2em;
+  z-index: -1;
+  transform: skewX(-5deg);
 }/*# sourceMappingURL=skb.css.map */

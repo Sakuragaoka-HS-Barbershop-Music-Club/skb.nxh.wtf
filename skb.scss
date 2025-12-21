@@ -12,6 +12,8 @@ $boxwidth: clamp(60%, 600px, 85%);
 $skew: -3deg;
 
 $imagewidth: clamp(50vw, 600px, 85vw);
+$bodywidth: 80%;
+$box-margin: 1rem;
 
 @use "zen-marugothic.css";
 
@@ -20,7 +22,7 @@ html {
 }
 
 body {
-    width: 87.5%;
+    width: $bodywidth;
     margin-left: auto;
     margin-right: auto;
     //padding-left: 12.5%;
@@ -42,7 +44,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1;
 }
 
@@ -95,9 +97,10 @@ emph::before{
             skewX(-5deg);
 }
 
-article {
-    margin: 1rem 0;
+div.box {
+    margin: $box-margin 0;
     padding: 1rem;
+    position:relative;
     width: $boxwidth;
     background-color: $darkred;
     mix-blend-mode: hard-light;
@@ -105,24 +108,60 @@ article {
     transform: skewY($skew);
 }
 
-article.right {
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: calc((100% - $boxwidth) * sin($skew) + 1rem);
-    margin-bottom: calc(1rem - (100% - $boxwidth) * sin($skew) );
+div.player {
+    margin: $box-margin 0;
+    padding: 1rem;
+    position:relative;
+    width: $boxwidth;
+    color: $white;
+    transform: skewY($skew);
 }
+
+div.right {
+    margin-right: 0;
+    margin-left: calc(100% - $boxwidth);
+    margin-top: calc((100% - $boxwidth) * tan($skew) + $box-margin);
+    margin-bottom: calc($box-margin - (100% - $boxwidth) * tan($skew) );
+}
+
+div.center {
+    margin-right: auto;
+    margin-left: calc((100% - $boxwidth) * 0.5);
+    margin-top: calc((100% - $boxwidth) * tan($skew) * 0.5 + 1rem);
+    margin-bottom: calc($box-margin - (100% - $boxwidth) * tan($skew) * 0.5 );
+}
+
+
 
 p,
 dl,
 ol,
 ul,
 nav {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 a {
-    color: inherit;
+  position: relative;
+  color: $white;
+  z-index: 1;
+}
+
+a::before{
+  /* Highlight color */
+  background-color: $pink;
+  background-blend-mode: hard-light;
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.3em);
+  height: 60%;
+  left: -0.15em;
+  bottom: 0.2em;
+  z-index: -1;
+  transform: //rotate(-1deg)
+            skewX(-5deg);
 }
 
 // p {

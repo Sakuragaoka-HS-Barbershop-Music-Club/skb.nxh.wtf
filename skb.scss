@@ -99,7 +99,7 @@ emph::before{
 
 div.box {
     margin: $box-margin 0;
-    padding: 1rem;
+    padding: 1rem 1.3rem;
     position:relative;
     width: $boxwidth;
     background-color: $darkred;
@@ -143,8 +143,10 @@ nav {
 
 a {
   position: relative;
+  margin: 0em 0.2em;
   color: $white;
   z-index: 1;
+  white-space: nowrap;
 }
 
 a::before{

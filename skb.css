@@ -1,27 +1,27 @@
-@font-face {
-  font-family: ZenMaruGothic;
-  src: url(assets/woff2/ZenMaruGothic-Light.woff2) format("woff2");
-  font-weight: 200;
-}
+/* @font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Light.woff2) format('woff2');
+    font-weight: 200;
+} */
 @font-face {
   font-family: ZenMaruGothic;
   src: url(assets/woff2/ZenMaruGothic-Regular.woff2) format("woff2");
 }
-@font-face {
-  font-family: ZenMaruGothic;
-  src: url(assets/woff2/ZenMaruGothic-Medium.woff2) format("woff2");
-  font-weight: 600;
-}
+/* @font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Medium.woff2) format('woff2');
+    font-weight: 600;
+} */
 @font-face {
   font-family: ZenMaruGothic;
   src: url(assets/woff2/ZenMaruGothic-Bold.woff2) format("woff2");
   font-weight: 700;
 }
-@font-face {
-  font-family: ZenMaruGothic;
-  src: url(assets/woff2/ZenMaruGothic-Black.woff2) format("woff2");
-  font-weight: 900;
-}
+/* @font-face {
+    font-family: ZenMaruGothic;
+    src: url(assets/woff2/ZenMaruGothic-Black.woff2) format('woff2');
+    font-weight: 900;
+} */
 html {
   font-size: 14px;
 }
@@ -36,7 +36,7 @@ body {
   font-family: ZenMaruGothic;
   font-weight: 600;
   background-color: #ffbac8;
-  background-image: url("assets/images/sakura.png");
+  background-image: url("assets/images/sakura.webp");
   background-size: 150vw auto;
   background-blend-mode: multiply;
   background-position-x: -25vw;
